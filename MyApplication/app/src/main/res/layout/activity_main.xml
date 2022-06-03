@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="12mm"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            >
+
+            <ImageView
+                android:id="@+id/money"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/money"
+
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBardD"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+
+
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="12mm"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            >
+
+        <ImageView
+            android:id="@+id/vera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            app:srcCompat="@drawable/vera" />
+
+        <ProgressBar
+            android:id="@+id/progressBardB"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="1dp"
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="12mm"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            >
+
+        <ImageView
+            android:id="@+id/people"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            app:srcCompat="@drawable/people" />
+
+        <ProgressBar
+            android:id="@+id/progressBarH"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_gravity="bottom"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="12mm"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+        <ImageView
+            android:id="@+id/land"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            app:srcCompat="@drawable/land" />
+
+        <ProgressBar
+            android:id="@+id/progressBarBT"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заголовок ситуации"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Описание ситуации" />
+
+
+    <FrameLayout
+        android:id="@+id/place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="541dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:backgroundTint="#FF0000"
+            android:text="1"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:backgroundTint="#FFF200"
+            android:text="2"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#04B60D"
+            android:text="3"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+</LinearLayout>
