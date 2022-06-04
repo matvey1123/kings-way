@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-
+    android:background="@drawable/fon1"
     >
 
 
@@ -140,61 +140,83 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Заголовок ситуации"
-        android:textStyle="bold" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
 
     <TextView
         android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Описание ситуации" />
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="Описание ситуации"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
 
+    <ImageView
+        android:id="@+id/swic"
+        android:layout_width="293dp"
+        android:layout_height="283dp"
+        android:layout_gravity="center"
 
-    <FrameLayout
-        android:id="@+id/place_holder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="3" />
+        android:layout_weight="0"
+        app:srcCompat="@drawable/men1"
+
+        />
+
 
     <LinearLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="541dp"
-        android:layout_gravity="center"
+        android:layout_height="54dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
 
 
-        <Button
-            android:id="@+id/bt1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="20dp"
-            android:layout_weight="0"
-            android:backgroundTint="#FF0000"
-            android:text="1"
-            android:textSize="25sp" />
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layoutbt"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:gravity="bottom"-->
 
-        <Button
-            android:id="@+id/bt2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="20dp"
-            android:layout_weight="0"
-            android:backgroundTint="#FFF200"
-            android:text="2"
-            android:textSize="25sp" />
+<!--            android:orientation="horizontal">-->
 
-        <Button
-            android:id="@+id/bt3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="#04B60D"
-            android:text="3"
-            android:textSize="25sp" />
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0"
+                android:backgroundTint="#FF0000"
+                android:text="1"
+                android:textSize="25sp" />
 
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0"
+                android:backgroundTint="#FFF200"
+                android:text="2"
+                android:textSize="25sp" />
 
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#04B60D"
+                android:text="3"
+                android:textSize="25sp" />
+
+<!--        </LinearLayout>-->
     </LinearLayout>
 </LinearLayout>

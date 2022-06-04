@@ -1812,4 +1812,14 @@ public class Story {
 
         return current_situation.direction.length == 0;
     }
+
+
+
+//    public boolean isEnd1(){
+//        return current_situation.direction.length <=4;
+//    }
+//
+//    public boolean isEnd2(){
+//        return current_situation.direction.length == 1;
+//    }
 }
